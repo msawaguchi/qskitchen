@@ -1,0 +1,16 @@
+export const defaultTheme = {
+  white: '#FFF',
+  background: '#FAFAFA',
+  'base-input': '#F2F2F2',
+  'base-button': '#E6E5E5',
+  'base-hover': '#D7D5D5',
+  'base-label': '#8D8686',
+  'base-text': '#574F4D',
+  'base-subtitle': '#1F1A3E',
+  'base-title': '#161616',
+  'yellow-light': '#fff4d9',
+  'yellow-border': '#FCD98E',
+  yellow: '#F1B530',
+  green: '#02a609',
+  red: '#f84747',
+}
