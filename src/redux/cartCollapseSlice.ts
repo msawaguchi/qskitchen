@@ -4,8 +4,10 @@ interface CartCollapseState {
   cartCollapsed: boolean
 }
 
+const isMobile = () => window.innerWidth <= 768
+
 const initialState: CartCollapseState = {
-  cartCollapsed: true,
+  cartCollapsed: !isMobile(),
 }
 
 const cartCollapseSlice = createSlice({
