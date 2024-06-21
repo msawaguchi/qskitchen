@@ -12,7 +12,7 @@ export const LayoutContainer = styled.div`
 `
 
 interface LeftContainerProps {
-  $iscartopen: true | undefined
+  $iscartopen: boolean
 }
 
 export const LeftContainer = styled.div<LeftContainerProps>`

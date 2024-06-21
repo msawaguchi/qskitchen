@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const ButtonContainer = styled.button`
+interface ButtonContainerProps {
+  disabled: boolean
+}
+
+export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: 100%;
   height: 2.8rem;
   background: ${(props) =>
