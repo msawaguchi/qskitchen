@@ -13,7 +13,7 @@ export function DefaultLayout() {
 
   return (
     <LayoutContainer>
-      <LeftContainer $iscartopen={cartCollapsed ? true : undefined}>
+      <LeftContainer $iscartopen={cartCollapsed}>
         <Header />
         <Outlet />
         <Footer />
