@@ -32,7 +32,7 @@ export const CardDishesContainer = styled.div`
     max-width: 10rem;
     margin-top: -4rem;
     margin-bottom: 1rem;
-    border-radius: 50%; /* Torna a imagem redonda */
+    border-radius: 50%;
   }
 
   &:hover {
