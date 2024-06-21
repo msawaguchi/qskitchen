@@ -96,7 +96,7 @@ export function Details() {
             {quantity > 0 ? (
               <CartCounter item={item} quantity={quantity} />
             ) : (
-              <Button onClick={() => handleAddToCart(item)}>
+              <Button onClick={() => handleAddToCart(item)} disabled={false}>
                 <TiPlus /> Add to cart
               </Button>
             )}
