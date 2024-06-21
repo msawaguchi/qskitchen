@@ -63,7 +63,10 @@ export function CardFood({ item }: CardFoodProps) {
   }
 
   return (
-    <CardDishesContainer onClick={() => handleViewDetails(item.id)}>
+    <CardDishesContainer
+      onClick={() => handleViewDetails(item.id)}
+      data-testid="card-food"
+    >
       <img src={item.pathImage} alt={item.name} onLoad={handleImageLoad} />
       {!imgLoaded && <IoFastFood style={{ fontSize: 48 }} />}
 
@@ -79,7 +82,10 @@ export function CardFood({ item }: CardFoodProps) {
         {quantity > 0 ? (
           <CartCounter item={item} quantity={quantity} />
         ) : (
-          <AddToCartButton onClick={(event) => handleAddToCart(item, event)}>
+          <AddToCartButton
+            onClick={(event) => handleAddToCart(item, event)}
+            data-testid="add-to-cart-button"
+          >
             <FiPlus />
           </AddToCartButton>
         )}
