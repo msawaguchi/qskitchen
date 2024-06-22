@@ -51,4 +51,8 @@ export const CartQuantityCounter = styled.div`
   font-weight: bold;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 600px) {
+    top: 0.8rem;
+  }
 `
